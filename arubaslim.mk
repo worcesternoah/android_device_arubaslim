@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The GPS configuration appropriate for this device.
 #$(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/delos3geur/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/arubaslim/overlay
 
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
@@ -38,16 +38,16 @@ PRODUCT_PACKAGES += ueventd.qcom.rc
 PRODUCT_PACKAGES += init.qcom.ril.sh
 
 # Rootdir
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/fstab.qcom:root/fstab.qcom
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/init.device.rc:root/init.device.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/init.qcom.bt.rc:root/init.qcom.bt.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/init.qcom.rc:root/init.qcom.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/init.qcom.ril.sh:root/init.qcom.ril.sh
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/lpm.rc:root/lpm.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
-PRODUCT_COPY_FILES += device/samsung/delos3geur/system/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
-PRODUCT_COPY_FILES += device/samsung/delos3geur/system/lib/libaudcal.so:obj/lib/libaudcal.so
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/fstab.qcom:root/fstab.qcom
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/init.device.rc:root/init.device.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/init.qcom.bt.rc:root/init.qcom.bt.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/init.qcom.rc:root/init.qcom.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/init.qcom.ril.sh:root/init.qcom.ril.sh
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/lpm.rc:root/lpm.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
+PRODUCT_COPY_FILES += device/samsung/arubaslim/system/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
+PRODUCT_COPY_FILES += device/samsung/arubaslim/system/lib/libaudcal.so:obj/lib/libaudcal.so
 
 # Torch
 PRODUCT_PACKAGES += Torch
@@ -124,9 +124,9 @@ PRODUCT_COPY_FILES += frameworks/av/media/libstagefright/data/media_codecs_googl
 PRODUCT_COPY_FILES += frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
 # Config Files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/delos3geur/system,system)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/arubaslim/system,system)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/delos3geur/rootdir,rootdir)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/arubaslim/rootdir,rootdir)
 
 # Permissions
 PRODUCT_COPY_FILES += frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml
