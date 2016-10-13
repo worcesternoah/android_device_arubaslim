@@ -70,7 +70,7 @@ ARCH_ARM_HAVE_32_BYTE_CACHE_LINES := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/arubaslim
 TARGET_KERNEL_CONFIG := arubaslim_defconfig
-TARGET_PREBUILT_KERNEL := device/samsung/kernel
+#TARGET_PREBUILT_KERNEL := device/samsung/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.selinux=permissive hack_lcd=1 chg_hack_lcd=0
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
